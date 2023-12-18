@@ -45,7 +45,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="container p-6  fixed bg-white max-w-[100%] shadow-md ">
+    <nav class="container p-6  fixed bg-white md:max-w-[100%] w-full shadow-md ">
         <!-- Flex veryBrightBlue r -->
         <div class="flex items-center justify-between mx-5 md:mx-32">
           <!-- Logo -->
@@ -65,7 +65,7 @@
             
               
           <a
-            href="/src/getstarted.html" id="get_started_btn"
+            href="/html/shop.html" id="get_started_btn"
             class="hidden p-3 px-6 pt-2 text-white font-jost bg-veryBrightBlue rounded-full baseline hover:bg-brightRedLight md:block transform hover:scale-125 transition ease-in duration-5000"
             >Buy Book Now </a
           >
@@ -86,23 +86,15 @@
         <div class="md:hidden">
           <div
             id="menu"
-            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+            class="absolute flex-col items-center hidden  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-0 right-10 drop-shadow-md"
           >
           <a href="#" class="text-veryBrightBlue">Home</a>
           <a href="/html/author.html" class="hover:text-veryBrightBlue">About me</a>
           <a href="/html/shop.html" class="hover:text-veryBrightBlue">Shop</a>
           <a href="/html/contact.html" class="hover:text-veryBrightBlue">Contact</a>
           <div class="flex space-x-7 hover:bg-veryBrightBlue">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mt-2 sm
-            :hidden">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-              </svg>
               
-          <a
-            href="/src/getstarted.html" id="get_started_btn"
-            class="hidden p-3 px-6 pt-2 text-white font-jost bg-veryBrightBlue rounded-full baseline hover:bg-brightRedLight md:block transform hover:scale-125 transition ease-in duration-5000"
-            >Buy Book Now </a
-          >
+
           </div>
            
           </div>
@@ -166,6 +158,7 @@
     </div>
   </section>
 
+  
   <!-- mini about-->
 
   <section id="mini-about">
@@ -202,6 +195,7 @@
     </div>
 
   </section>
+
 
   <!-- author -->
 
@@ -269,10 +263,11 @@
   </section>
 
   <!-- advertisment -->
-    <div clas="flex flex-col bg-black">
-      <section id="advertisment" class="container font-jost justify-center md:mx-auto  my-20 items-center mx-5">
-      <span class="font-semibold tracking-widest py-4 text-md">BEST SELLER</span>
-      <div class="flex flex-col md:flex-row justify-between">
+    
+      <section id="advertisment" class="container font-jost justify-center md:mx-auto  my-20 items-center">
+        <div clas="flex flex-col ">
+      <span class="font-semibold tracking-widest py-4 text-md mx-5">BEST SELLER</span>
+      <div class="flex flex-col md:flex-row justify-between mx-5">
         <span class="text-3xl font-black pb-4 my-2">Pick The Book Weekly Best Seller.</span>
         <span class="md:mr-4">
             <a
@@ -288,7 +283,7 @@
   <!-- books advertisment -->
   <div class="flex flex-row md:flex-row flex-wrap mx-auto justify-center ">
     <!-- first -->
-    <div class="my-7 w-72 md:w-1/4 md:mx-">
+    <div class="my-7 w-72 md:w-1/4 md:mx-3 mx-3">
       <img src="/img/book-mockup2.jpg" alt="" class=" h-80 w-full rounded-t-xl ">
         <div class="details h-52 flex flex-col">
           <span class="font-light tracking-widest py-2 text-sm" > philosophy, science </span>
