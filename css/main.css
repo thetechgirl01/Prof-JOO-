@@ -857,13 +857,13 @@ video {
   transition: all 0.5s;
 }
 .hamburger-top {
-  background: #000;
+  background-color: #000;
 
 }
 
 .hamburger-middle {
   transform: translateY(7px);
-  background: #000;
+  background-color: #000;
 }
 
 .hamburger-bottom {
