@@ -853,7 +853,7 @@ video {
   left: 0;
   width: 24px;
   height: 2px;
-  background-color: #0b0d0c;
+   background: #000;
   transform: rotate(0);
   transition: all 0.5s;
 }
