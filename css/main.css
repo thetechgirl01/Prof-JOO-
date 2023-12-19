@@ -853,17 +853,22 @@ video {
   left: 0;
   width: 24px;
   height: 2px;
-   background: #000;
   transform: rotate(0);
   transition: all 0.5s;
+}
+.hamburger-top {
+  background: #000;
+
 }
 
 .hamburger-middle {
   transform: translateY(7px);
+  background: #000;
 }
 
 .hamburger-bottom {
   transform: translateY(14px);
+  background: #000;
 }
 
 .open {
