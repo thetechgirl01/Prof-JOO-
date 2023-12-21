@@ -50,6 +50,7 @@ filter_btns.forEach((filter_btn) => {
           }s,height 0.5s ease ${index / project_length + 0.6}s`;
         }
         project.classList.add('show');
+        
         project.classList.remove('hide');
       } else {
         project.style.transition = `width 0.5s ease ${
@@ -61,3 +62,5 @@ filter_btns.forEach((filter_btn) => {
     });
   });
 });
+
+
