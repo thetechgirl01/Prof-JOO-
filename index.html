@@ -104,7 +104,7 @@
    <!-- Hero Section -->
    <section id="hero" >
     <!-- Flex Container -->
-    <span class="fixed rounded-full w-12 h-12 bg-veryBrightBlue  right-0 bottom-0 m-10">
+    <span class="fixed back_to_top rounded-full w-12 h-12 bg-veryBrightBlue  right-0 bottom-0 m-10">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white font-extra m-1">
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
       </svg>
@@ -256,7 +256,7 @@
       
                        <div class="pl-10">
                 <a
-                  href="/src/getstarted.html"
+                  href="/html/author.html"
                   class="p-3 px-6 pt-2 text-white bg-black hover:bg-white hover:text-black border border-black rounded-full baseline text-sm hover:bg-brightRedLight"
                   >Learn More</a
                 >
@@ -269,7 +269,7 @@
 
   <!-- advertisment -->
     
-  <section id="advertisment" class="container font-jost justify-center my-20 lg:mx-10 items-center">
+  <section id="advertisment" class="container font-jost justify-center my-20 items-center">
         <div clas="flex flex-col lg:ml-20">
       <span class="font-semibold tracking-widest py-4 text-md mx-5">BEST SELLER</span>
       <div class="flex flex-col md:flex-row justify-between mx-5">
@@ -678,6 +678,23 @@
 
 
 
+<script>
+  let back_to_top = document.querySelector('.back_to_top');
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+      back_to_top.classList.add('show');
+    } else {
+      back_to_top.classList.remove('show');
+    }
+  });
+  back_to_top.addEventListener('click', function (e) {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  });
+</script>
 
 
 </body>
