@@ -433,12 +433,7 @@
             </div>
 
             
-            <span class=" md:text-2xl font-extrabold">  Tags </span>
-            <div class="border-b-4 border-gray-200 my-4  mx-auto "></div>
-            <span class="text-sm font-bold"> Biography, bestseller, adventure, biography Design, Fiction, Novel, Books</span>
-
-            <span class=" md:2xl font-extrabold mt-2 mb-5">  Follow </span>
-
+            
             <div class="border-b-4 border-gray-200   mx-auto "></div>
 
         </div>
@@ -455,7 +450,7 @@
           <!-- Logo -->
           
             <span class="font-dancing text-veryBrightBlue font-bold text-4xl"> Prof. J.O.O </span>
-            <span>Lorem ipsum dolor sit amet, consec tetur adipiscing elitsed onsec.</span>
+            <span>Address Philosophical Questions with Ease.</span>
             <div class="flex space-x-5">
               <!-- facebook -->
               <span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>            
@@ -537,5 +532,22 @@
  
 
   <script src="/js/script.js"></script>
+  <script>
+    let back_to_top = document.querySelector('.back_to_top');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 100) {
+        back_to_top.classList.add('show');
+      } else {
+        back_to_top.classList.remove('show');
+      }
+    });
+    back_to_top.addEventListener('click', function (e) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    });
+  </script>
 </body>
 </html>
