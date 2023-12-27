@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Checkbox</title>
+    <!-- Include Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="p-4">
+
+    <div class="flex items-center">
+        <input type="checkbox" id="myCheckbox" class="mr-2">
+        <label for="myCheckbox">Remember me</label>
+    </div>
+
+    <script>
+        // Retrieve the checkbox state from local storage
+        const checkbox = document.getElementById('myCheckbox');
+        const isChecked = localStorage.getItem('checkboxState') === 'true';
+
+        // Set the initial state
+        checkbox.checked = isChecked;
+
+        // Add an event listener to update local storage when the checkbox is changed
+        checkbox.addEventListener('change', () => {
+            localStorage.setItem('checkboxState', checkbox.checked);
+        });
+    </script>
+
+</body>
+</html>
