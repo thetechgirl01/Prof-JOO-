@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof. J.O.O | Speech</title>
+    <!-- Include Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="p-4">
+
+    <section class=" mx-auto">
+        <div class="relative">
+            <video id="myVideo" class=" w-full md:h-96 sm:w-full" controls>
+                <source src="/img/video.mp4" type="video/mp4" class="w-full h-full">
+                Your browser does not support the video tag.
+            </video>
+
+            <div id="playButton" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"/>
+                </svg>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        // Get references to DOM elements
+        const video = document.getElementById('myVideo');
+        const playButton = document.getElementById('playButton');
+        const textContent = document.getElementById('textContent');
+
+        // Add click event listener to the play button
+        playButton.addEventListener('click', () => {
+            // Hide the play button and text content
+            playButton.style.display = 'none';
+            textContent.style.display = 'none';
+            
+            // Play the video
+            video.play();
+        });
+    </script>
+
+</body>
+</html>
