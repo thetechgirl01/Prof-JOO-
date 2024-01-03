@@ -1012,15 +1012,9 @@ body {
   color: #fff;
   border: #000 2px solid;
   display: inline-block;
-  cursor: pointer;
   transition: all 0.5s ease;
 }
-.filter-btn.active {
-  background: #fff;
-  border: #000 2px solid;
-  color: #000;
-  transition: all 0.5s ease;
-}
+
 
 .filter-project-item.show {
   width: 50%;
